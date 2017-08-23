@@ -18,7 +18,7 @@ def calc_drainage_area(z, x_size):
 
         j = i + 1
         # look right
-        while j < len(z) - 1 and z[j] > z[j - 1]:
+        while j < len(z) and z[j] > z[j - 1]:
             drainage += x_size
             j += 1
 
